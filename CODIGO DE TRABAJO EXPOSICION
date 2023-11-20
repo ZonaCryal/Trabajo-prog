@@ -1,0 +1,35 @@
+#EXPOSICION
+#Alvaro Bernardo Luna Herrera
+#Jeyson Angel Solis Barazorda
+#Ejercicio nro1
+
+#Determinando numero
+def primo(n):
+    if (n>1):
+        cont=0
+        i=2
+        while (i<n and cont==0):
+            resto=n%i
+            if (resto==0):
+                cont+=1
+            i+=1
+        if (cont==0):
+            print("El numero" ,n, "SI es un numero primo")
+        else:
+            print("El numero" ,n, "NO es un numero primo")
+    else:
+        print("El numero" ,n, "NO es un numero primo")
+    return n
+
+#Identificando variables
+a=0
+print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+n=int(input("Escribe un numero para identificar si es primo o no--->"))
+modulo1=primo(n)
+print(modulo1)
+while (a!=n):
+    print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+    n=int(input("Escribe un numero para identificar si es primo o no--->"))
+    modulo1=primo(n)
+    print(modulo1)
+n=0
